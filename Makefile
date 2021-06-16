@@ -38,7 +38,7 @@ test: #local
 		--cov-report term:skip-covered \
 		--cov-report html:reports \
 		--junitxml=reports/unit_test_coverage.xml \
-		--cov=python-template tests/ -ra -s
+		--cov=src/python_template/ tests/ -ra -s
 
 .ONESHELL: #local
 types: mypy

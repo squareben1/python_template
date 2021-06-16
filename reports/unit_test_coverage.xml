@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="0" hostname="Jacks-iPad-2.home" name="pytest" skipped="0" tests="1" time="0.164" timestamp="2021-06-16T21:51:33.330214"><testcase classname="tests.test_example" file="tests/test_example.py" line="3" name="test_example" time="0.005"></testcase></testsuite></testsuites>
