@@ -1,4 +1,5 @@
-# hypermodern-python
+# python-template
 
-Companion repository for the Hypermodern Python article series<br>
+Template Python repo adapted from the Hypermodern Python article series:
+
 https://medium.com/@cjolowicz/hypermodern-python-d44485d9d769

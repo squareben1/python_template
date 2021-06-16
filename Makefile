@@ -8,9 +8,6 @@ install:
 update:
 	poetry update
 
-local: install
-	poetry run pre-commit install
-
 .ONESHELL: #local
 lint: flake8 black
 
@@ -36,12 +33,12 @@ safety: #local
 
 .ONESHELL:
 test: #local
-	PYTHONPATH=snake_hands/ \
+	PYTHONPATH=python-template/ \
 		poetry run pytest \
 		--cov-report term:skip-covered \
 		--cov-report html:reports \
 		--junitxml=reports/unit_test_coverage.xml \
-		--cov=snake_hands tests/ -ra -s
+		--cov=python-template tests/ -ra -s
 
 .ONESHELL: #local
 types: mypy
@@ -55,4 +52,4 @@ build: #local
 	poetry build
 
 docs:
-	poetry run pdoc --html snake_hands --force --output-dir docs
+	poetry run pdoc --html python-template --force --output-dir docs
